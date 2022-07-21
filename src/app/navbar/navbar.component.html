@@ -4,14 +4,17 @@
         <div class="burger"></div>
       </div>
       <nav class="nav">
-        <img src="../../assets/images/logotype.png" alt="Logotype de Direct Burotic" />
-        <a href="#" class="navbar-link active">Accueil</a>
+        <img src="../../assets/images/logotype.png" alt="Logotype de Direct Burotic" routerLink="" class="pointer"/>
+        <a routerLink="" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact:true}"
+        class="navbar-link">Accueil</a>
       </nav>
     </div>
     <nav class="vertical-navbar">
-      <a href="#" class="nav-vertical-link">
+      <a routerLink="planets"  routerLinkActive="active" class="nav-vertical-link">
         <span class="fas fa-globe fa-3x"></span>
-        <p>Planètes</p>
+        <p >Planètes</p>
       </a>
       <a href="#" class="nav-vertical-link">
         <span class="fas fa-rocket fa-3x"></span>
