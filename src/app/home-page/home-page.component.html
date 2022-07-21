@@ -2,7 +2,7 @@
   <div class="card card-1" >
     <h1 class="title text-secondary" >ABOUT THE UNIVERSE</h1>
     <p >
-      Bienvenue sur
+      Bienvenue {{ character?.name}} sur
       <span class="text-secondary" >ABOUT THE UNIVERSE</span>
       pour découvrir toutes nos découvertes à propos du monde qui nous entoure !
     </p>
@@ -23,7 +23,7 @@
             <div class="bold text-secondary">
               Nombre d'êtres vivants recensés
             </div>
-            <div class="info">82</div>
+            <div class="info">{{ character?.count}}</div>
           </div>
         </div>
         <div class="information" >
@@ -35,7 +35,7 @@
             <div class="bold text-secondary" >
               Nombre de véhicules recensés
             </div>
-            <div class="info" >39</div>
+            <div class="info" >{{ vehicles?.count}}</div>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
             <div class="bold text-secondary">
               Nombre de planètes recensées
             </div>
-            <div class="info">60</div>
+            <div class="info">{{ planets?.count}}</div>
           </div>
         </div>
         <div class="information" >

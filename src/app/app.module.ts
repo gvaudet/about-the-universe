@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { IndexShowPlanetsComponent } from './index-show-planets/index-show-planets.component';
-
+import { IndexShowPlanetsComponent } from './index-show-planets/index-show-planets.component'
+import {  HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { IndexShowPlanetsComponent } from './index-show-planets/index-show-plane
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
