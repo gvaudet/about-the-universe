@@ -32,7 +32,7 @@ export class HomePageComponent implements OnInit {
       }); 
     }
 
-  getPlanets() {
+    getPlanets() {
     this.http.get('https://swapi.dev/api/planets').subscribe(data => {
       this.planets = data; 
     })
