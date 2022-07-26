@@ -1,34 +1,50 @@
 <main class="container container-1-2">
-  <app-index-planets></app-index-planets>
+  <app-index-planets (sendPlanet)="receivePlanetsInfos($event)"></app-index-planets>
+  <div>
     <div>
-      <div class="card">
-        <div class="information mb-5">
-          <div>
-            <div class="bold text-primary">Luke Sky</div>
-            <div class="info mb-3">Info supplémentaire</div>
-          </div>
-        </div>
-        <div class="small-information mt-5">
-          <a href="#" class="link">200 kg</a>
-          <span class="fas fa-weight fa-2x"></span>
-        </div>
-        <div class="medium-information mt-4">
-          <p class="bold">Véhicules</p>
-          <div>
-            <div class="badge badge-secondary">Voiture</div>
-            <div class="badge badge-secondary">Avion</div>
-          </div>
-        </div>
-        <div class="mt-5 d-flex right">
-          <div class="btn">En savoir plus</div>
+      <div class="card info text-secondary" *ngIf="!planet"> Sélectionner le contenu à afficher ! </div>
+      <!---->
+    </div>
+
+    <div class="card" *ngIf="planet">
+      <div class="information mb-5">
+        <div>
+          <h2 class="title text-secondary">{{planet?.name}}</h2>
+          <div class="info mb-3"><span class="text-secondary">Population :</span> {{planet?.population}}</div>
         </div>
       </div>
-      <div class="card flex little">
-        <div class="card-header">
-          <h2 class="title text-primary mb-5">
-            VUE SUR LES DIFFÉRENTES ESPÈCES
-          </h2>
+      <div class="d-grid-2 mt-5 mb-5 w-100">
+        <div class="information"><span class="far fa-circle fa-3x img text-secondary"></span>
+          <div>
+            <div class="bold text-secondary"> Diamètre </div>
+            <p>{{planet?.diameter}}</p>
+          </div>
         </div>
+        <div class="information"><span class="fas fa-thermometer-full fa-3x img text-secondary"></span>
+          <div>
+            <div class="bold text-secondary"> Climat </div>
+            <p>{{planet?.climate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid-2 mt-5 mb-5 w-100">
+        <div class="information"><span class="fas fa-magnet fa-3x img text-secondary"></span>
+          <div>
+            <div class="bold text-secondary"> Gravité </div>
+            <div class="info">{{planet?.gravity}}</div>
+          </div>
+        </div>
+        <div class="information"><span class="fas fa-tree fa-3x img text-secondary"></span>
+          <div>
+            <div class="bold text-secondary"> Terrain </div>
+            <div class="info">{{planet?.terrain}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 d-flex right">
+        <div class="btn">En savoir plus</div>
       </div>
     </div>
-  </main>
+  </div>
+
+</main>
