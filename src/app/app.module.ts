@@ -8,13 +8,18 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { IndexShowPlanetsComponent } from './index-show-planets/index-show-planets.component'
 import {  HttpClientModule } from "@angular/common/http";
 import { IndexPlanetsComponent } from './index-show-planets/index-planets/index-planets.component';
+import { IndexShowVehiclesComponent } from './index-show-vehicles/index-show-vehicles.component';
+import { IndexVehiclesComponent } from './index-show-vehicles/index-vehicles/index-vehicles.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomePageComponent,
     IndexShowPlanetsComponent,
-    IndexPlanetsComponent
+    IndexPlanetsComponent,
+    IndexShowVehiclesComponent,
+    IndexVehiclesComponent
   ],
   imports: [
     BrowserModule,
