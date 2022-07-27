@@ -18,6 +18,7 @@ time, mark, audio, video {
   font-size: 100%;
   font-weight: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -606,6 +607,7 @@ button {
 
   .card.flex .table {
     height: 100%;
+    width: 100%;
   }
 }
 .navbar-height {
@@ -903,19 +905,23 @@ button {
   font-weight: 500;
   color: #efefef;
   background-color: #5E95B7;
+  width: 100%;
 }
 
 .table th {
   padding: 5px 10px;
+  width: 100%;
 }
 
 .table td {
   padding: 15px 10px;
+  width: 100%;
 }
 
 .table thead th:nth-child(1),
 .table tbody td:nth-child(1) {
   text-align: left;
+  width: 100%;
 }
 
 .table thead th:nth-child(2),

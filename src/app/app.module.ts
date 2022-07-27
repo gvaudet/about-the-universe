@@ -10,6 +10,7 @@ import {  HttpClientModule } from "@angular/common/http";
 import { IndexPlanetsComponent } from './index-show-planets/index-planets/index-planets.component';
 import { IndexShowVehiclesComponent } from './index-show-vehicles/index-show-vehicles.component';
 import { IndexVehiclesComponent } from './index-show-vehicles/index-vehicles/index-vehicles.component';
+import { NextMissionComponent } from './next-mission/next-mission.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IndexVehiclesComponent } from './index-show-vehicles/index-vehicles/ind
     IndexShowPlanetsComponent,
     IndexPlanetsComponent,
     IndexShowVehiclesComponent,
-    IndexVehiclesComponent
+    IndexVehiclesComponent,
+    NextMissionComponent
   ],
   imports: [
     BrowserModule,
